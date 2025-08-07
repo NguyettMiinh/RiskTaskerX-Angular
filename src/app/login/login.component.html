@@ -1,5 +1,29 @@
 <div class="login-wrapper">
-    <div class="login-group">
-                
+    <div class="login-group flex justify-center items-center h-screen">
+        <div class="bg-white w-fit h-fit px-[20px] py-[39px] rounded-lg">
+            <div>
+                <img src="assets/images/logo.png" width="250px" height="116px" class="mx-auto" />
+            </div>
+            <form [formGroup]="loginForm" class="login-form">
+                <div class="input-group">
+                    <mat-icon>person_outline</mat-icon>
+                    <input id="username" type="text" formControlName="username" class="login-input" />
+                </div>
+                <div class="input-group">
+                    <mat-icon>lock_outline</mat-icon>
+                    <input id="password" type="text" formControlName="password" class="login-input" />
+                </div>
+                <div class="flex justify-between mt-[28px]">
+                    <div class="flex items-center">
+                        <input id="remember-me" type="checkbox" formControlName="rememberMe" class="mr-2 w-[16px] h-[16px]"/>
+                        <label for="remember-me">Remember Me ?</label>
+                    </div>
+                    <div>
+                        <a class="text-sm text-[#6055F2]">Forgot password ?</a>
+                    </div>
+                </div>
+                <button (click)="handleSubmit()" class="w-full mx-auto bg-[#6055F2] text-white h-[40px] rounded-[5px] mt-[28px]">Log In</button>
+            </form>
+        </div>
     </div>
 </div>
