@@ -1,0 +1,19 @@
+<div class="forgot-wrapper">
+    <div class="forgot-group flex justify-center items-center h-screen">
+        <div class="bg-white w-fit h-fit px-[20px] py-[39px] rounded-[25px]">
+            <div>
+                <img src="assets/images/logo.png" width="250px" height="116px" class="mx-auto" />
+            </div>
+            <form [formGroup]="forgotForm" class="forgot-form">
+                 <div class="text-[25px] font-bold text-center mt-[28px] tracking-[0.14em]">OTP Verification</div>
+                <div class="text-[#636364] text-center mt-[28px]">Enter the OTP sent to your email.</div>
+                <div class="input-group">
+                    <ng-otp-input [config]="{length: 4, allowNumbersOnly: true, inputClass: 'custom-otp-input', inputStyles: {
+                        'margin-right': '24px'
+                    }}"></ng-otp-input>
+                </div>   
+                <button (click)="handleSubmit()" class="w-[460px] mx-auto bg-[#6055F2] text-white h-[40px] rounded-[5px] mt-[28px]">Continue</button>     
+            </form>
+        </div>
+    </div>
+</div>

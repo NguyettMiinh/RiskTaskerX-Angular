@@ -1,0 +1,26 @@
+.forgot-wrapper {
+    background-image:linear-gradient(107.44deg, #E2E0FF 1.96%, #EBEAFA 16.15%, #F4F4F5 30.33%, #F5F5F5 71.54%, #E4E2FE 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.forgot-form .input-group {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;   
+    margin-top: 28px; 
+}
+.forgot-form .forgot-input {
+    width: 400px;
+    outline: none;
+}
+
+.forgot-form mat-icon {
+  font-size: 16px;
+  color: #8e8e8e;
+  line-height: 24px;        /* căn icon theo chiều cao */
+}
+
+
