@@ -7,9 +7,10 @@ import { LoginPageComponent } from './auth/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgotPageComponent } from './auth/forgot/forgot-password.component';
-import { OtpPageComponent } from './auth/otp/otp-page..component';
+import { OtpPageComponent } from './auth/otp/otp-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgOtpInputModule } from 'ng-otp-input';
+import { ResetPageComponent } from './auth/reset/reset.component';
 
 @NgModule({
   // import new component
@@ -17,7 +18,8 @@ import { NgOtpInputModule } from 'ng-otp-input';
     AppComponent,
     LoginPageComponent,
     ForgotPageComponent,
-    OtpPageComponent
+    OtpPageComponent,
+    ResetPageComponent
   ],
   // import module
   imports: [

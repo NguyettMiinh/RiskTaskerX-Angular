@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
 import { AuthService } from "src/app/service/AuthService";
-import { UserInfo } from "src/app/share/types/Auth";
 
 
 @Component({
@@ -10,7 +9,7 @@ import { UserInfo } from "src/app/share/types/Auth";
     styleUrls: ['./reset.component.css'],
 })
 
-export class LoginPageComponent {
+export class ResetPageComponent {
     // 1
     loginForm = new FormGroup({
         email: new FormControl(''),
