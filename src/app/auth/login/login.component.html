@@ -1,41 +1,78 @@
 <div class="login-wrapper">
-    <div class="login-group flex justify-center items-center h-screen">
-        <div class="bg-white w-fit h-fit px-[20px] py-[39px] rounded-[25px]">
-            <div>
-                <img src="assets/images/logo.png" width="250px" height="116px" class="mx-auto" />
-            </div>
-            <form [formGroup]="loginForm" class="login-form">
-                 <div class="text-[25px] font-bold text-center mt-[28px] tracking-[0.18em]">welcome back!</div>
-                <div class="input-group">
-                    <mat-icon>person_outline</mat-icon>
-                    <input id="email" type="text" formControlName="email" class="login-input"
-                        placeholder="Enter your email" />
-                </div>
-                <div class="input-group">
-                    <mat-icon>lock_outline</mat-icon>
-                    <input id="password" type="password" formControlName="password" placeholder="********"
-                        class="login-input" />
-                </div>
-                <div class="flex justify-between mt-[28px]">
-                    <div class="checkbox-wrapper flex items-center relative">
-                        <input id="remember-me" type="checkbox" formControlName="rememberMe"
-                            class="peer appearance-none w-4 h-4 border border-gray-300 rounded checked:bg-[#6055F2] checked:border-transparent focus:outline-none mr-2" />
-                        <label for="remember-me" class="cursor-pointer select-none relative flex items-center">Remember
-                            Me ?
-                        </label>
-                        <svg class="absolute left-0 top-[2px] w-4 h-4 text-white pointer-events-none peer-checked:block hidden"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12" />
-                        </svg>
-                    </div>
-                    <div>
-                        <a routerLink="forgot-password" class="text-sm text-[#6055F2]">Forgot password ?</a>
-                    </div>
-                </div>
-                <button (click)="handleSubmit()"
-                    class="w-full mx-auto bg-[#6055F2] text-white h-[40px] rounded-[5px] mt-[28px]">Log In</button>
-            </form>
+  <div class="login-group flex justify-center items-center h-screen">
+    <div class="bg-white w-fit h-fit px-[20px] py-[39px] rounded-[25px]">
+      <div>
+        <img
+          src="assets/images/logo.png"
+          width="250px"
+          height="116px"
+          class="mx-auto"
+        />
+      </div>
+      <form [formGroup]="loginForm" class="login-form">
+        <div
+          class="text-[25px] font-bold text-center mt-[28px] tracking-[0.18em]"
+        >
+          welcome back!
         </div>
+        <div class="input-group">
+          <mat-icon>person_outline</mat-icon>
+          <input
+            id="email"
+            type="text"
+            formControlName="email"
+            class="login-input"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="input-group">
+          <mat-icon>lock_outline</mat-icon>
+          <input
+            id="password"
+            type="password"
+            formControlName="password"
+            placeholder="********"
+            class="login-input"
+          />
+        </div>
+        <div class="flex justify-between mt-[28px]">
+          <div class="checkbox-wrapper flex items-center relative">
+            <input
+              id="remember-me"
+              type="checkbox"
+              formControlName="rememberMe"
+              class="peer appearance-none w-4 h-4 border border-gray-300 rounded checked:bg-[#6055F2] checked:border-transparent focus:outline-none mr-2"
+            />
+            <label
+              for="remember-me"
+              class="cursor-pointer select-none relative flex items-center"
+              >Remember Me ?
+            </label>
+            <svg
+              class="absolute left-0 top-[2px] w-4 h-4 text-white pointer-events-none peer-checked:block hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <div>
+            <a routerLink="forgot-password" class="text-sm text-[#6055F2]"
+              >Forgot password ?</a
+            >
+          </div>
+        </div>
+        <button
+          (click)="handleSubmit()"
+          class="w-full mx-auto bg-[#6055F2] text-white h-[40px] rounded-[5px] mt-[28px]"
+        >
+          Log In
+        </button>
+      </form>
     </div>
+  </div>
 </div>
