@@ -16,20 +16,14 @@ import { ResetPageComponent } from './auth/reset/reset.component';
   // import new component
   declarations: [
     AppComponent,
-    LoginPageComponent,
-    ForgotPageComponent,
-    OtpPageComponent,
-    ResetPageComponent
   ],
   // import module
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     MatIconModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
